@@ -5,6 +5,7 @@ body {
   background: #fcfafc;
 }
 
+
 h1 {
   font-family: MPLUSRounded1c, Inter, "Liberation Sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -21,8 +22,27 @@ h3 {
   margin-top: 0;
 }
 
+
+div.header {
+  background: #FFD83C;
+  display: inline-block;
+  padding: 1em 2em;
+  border-radius: 7px;
+}
+div.header h1, div.header h2 {
+  margin: 0;
+  padding: 0;
+}
+div.header h1 {
+  font-size: 250%;
+}
+
+
 div.intro {
   padding: 1em 0;
+  column-count: 2;
+  column-gap: 1rem;
+  width: 100%;
 }
 
 div.links {
@@ -36,4 +56,58 @@ div.links {
   page-break-inside: avoid-column;
   /* Misc */
   margin-bottom: 1rem;
+  display: table;
+}
+div.links div {
+  padding: 1em;
+}
+
+div.links .downloads {
+  background: #EDE4F2;
+  border-top: solid 4px #6C4081;
+}
+div.links .downloads h3 {
+  color: #6C4081;
+}
+div.links .downloads a {
+  color: #6C4081;
+  font-weight: 700;
+}
+div.links .documentation {
+  background: #FEDFD7;
+  border-top: solid 4px #FC7753;
+}
+div.links .documentation h3 {
+  color: #FC7753;
+}
+div.links .documentation a {
+  color: #FC7753;
+  font-weight: 700;
+}
+div.links .community {
+  background: #F7DFED;
+  border-top: solid 4px #D763A9;
+}
+div.links .community h3 {
+  color: #D763A9;
+}
+div.links .community a {
+  color: #D763A9;
+  font-weight: 700;
+}
+
+.download-button {
+  background: white;
+  text-align: center;
+  border-radius: 15px;
+}
+.download-button a {
+  font-size: 200%;
+}
+.download-button p {
+  margin: 0;
+  padding: 0;
+}
+.download-button .date {
+  color: #A676BC;
 }
