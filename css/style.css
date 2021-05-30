@@ -118,3 +118,7 @@ div.links .community a {
 .download-button .date {
   color: #A676BC;
 }
+
+.main-screenshot img {
+  max-width: 450px;
+}
